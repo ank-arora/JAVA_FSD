@@ -32,7 +32,7 @@ public class first {
 		            }
 		         }
 		      }
-		    break start;
+		    break;
 	
 	   case 2:
 		   System.out.println("********Business level features*********\n");
@@ -40,6 +40,9 @@ public class first {
 		   System.out.println("a. Add a file\nb. Delete a file\nc. Search a file\nd. Return to main window\nEnter your choice:");
 		   Scanner sc = new Scanner(System.in);
 		   char c = sc.next().charAt(0); 
+		   
+		   task:
+		   do{
 		   switch(c) {
 		   case 'a':
 			   Scanner reader = new Scanner(System.in);
@@ -61,7 +64,7 @@ public class first {
 					   System.out.printf("Successfully created new file: %s%n", f);}
 				   else { System.out.printf("Failed to create new file: %s%n", f);}
 				   reader.close();
-				   break start;
+				   break;
 
 				 
 		   case 'b':
@@ -78,7 +81,7 @@ public class first {
 					   System.out.printf("Successfully deleted file: %s%n", z);}
 				   else { System.out.printf("Failed to delete the file: %s%n", z);}
 				   reader1.close();
-				   break start;
+				   break;
 				   
 		   case 'c':
 			   Scanner scan = new Scanner(System.in);
@@ -91,23 +94,23 @@ public class first {
 		       else {
 		    	   System.out.println("File does not exists");
 		    	      }
-		       break start;
+		       break;
 		       
 		   case 'd':
-			   break start;
+			   break task;
 		    
 		   default:
 		       System.out.println("invalid input");
 			 
 			    
 		 }
+		 }while(true);
 		       
 			   
 	    case 3:
 	    	System.out.println("Closing the application......");
 	    	System.out.println("Application closed");
-	    	System.exit(0);
-	    	break;
+	    	break start;
 		
 	    default:
 		     System.out.println("invalid input");
