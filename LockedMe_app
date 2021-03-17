@@ -95,6 +95,9 @@ public class first {
 		       
 		   case 'd':
 			   break start;
+		    
+		   default:
+		       System.out.println("invalid input");
 			 
 			    
 		 }
@@ -105,9 +108,12 @@ public class first {
 	    	System.out.println("Application closed");
 	    	System.exit(0);
 	    	break;
-			    }
+		
+	    default:
+		     System.out.println("invalid input");
+			   }
 		   }
-		}
+		   }
 }		
 			
 			
