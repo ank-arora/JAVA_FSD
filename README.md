@@ -1,2 +1,1 @@
-# LockedMe
-Assessment for TGS-JAVA FSD
+This repository will include all the projects in Java-FSD assesments.
